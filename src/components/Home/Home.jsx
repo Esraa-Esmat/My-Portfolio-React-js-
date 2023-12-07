@@ -60,9 +60,9 @@ const Home = () => {
                     <h1>{`Hi! I'm Esraa Mahmoud Esmat ,  `} <span className="txt-rotate" dataPeriod="1000" data-rotate='["Software Devloper", "Web Devloper", "Frontend Devloper"]'><span className="wrap">{text}</span></span></h1>
                     {/* <p>As a fresh graduate aiming to thrive in the field of programming, I'm eagerly searching for challenging roles to put my skills into action and grow further. My passion for programming runs deep, and I'm constantly seeking advice from experienced experts, driven by my dedication to continual learning. I'm wholeheartedly dedicated to putting in the effort and enthusiastic about diving into practical projects to elevate my programming abilities. I strongly believe that true professional development comes from hands-on experience and learning directly from the industry's finest.</p> */}
                     <p>An aspiring programmer and fresh graduate actively seeking challenging roles to apply and enhance my coding skills. I'm passionate about continuous learning, seeking guidance from experienced professionals. Committed to hands-on projects, I believe in the power of practical experience for professional growth</p>
-                    {/* <HashLink to='#connect' className="text-decoration-none pt-0 mt-0"> */}
+                    <a href='#connect' className="text-decoration-none">
                             <button>Let’s Connect <ArrowRightCircle size={25} /></button>
-                        {/* </HashLink> */}
+                        </a>
                   </div>}
               </TrackVisibility>
             </Col>
