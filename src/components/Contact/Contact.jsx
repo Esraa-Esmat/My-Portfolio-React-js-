@@ -46,6 +46,11 @@ const Contact = () => {
       errorMsg('Email, phone, and message are required fields');
       setButtonText("Send");
       return;
+    }
+    else if (!/\S+@\S+\.\S+/.test(email.trim())) {
+      errorMsg('Please enter a valid email address');
+      setButtonText("Send");
+      return;
     } else if (!/^\d{11}$/.test(phone.trim())) {
       errorMsg('Phone number must be 11 digits');
       setButtonText("Send");
