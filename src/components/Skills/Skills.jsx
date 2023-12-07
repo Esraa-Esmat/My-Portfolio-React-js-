@@ -55,7 +55,7 @@ const Skills = ({ title, describe }) => {
                   <div className="d-flex flex-column jusify-content-center text-center item"
                     onClick={() => handleSkillChange(skill.handleSubmit)}
                   >
-                    <div style={{ width: "50%" , margin: "0 auto 0px auto" , paddingBottom:"0" , height:"270px"}}>
+                    <div>
                       <CircularProgressBar
                         key={skill.id}
                         percent={skill.percent}
@@ -67,7 +67,7 @@ const Skills = ({ title, describe }) => {
                         size="150"
                       />
                     </div>
-                    <h5 className="mt-0 pt-0">{skill.name} </h5>
+                    <h5 className="mt-4">{skill.name} </h5>
                   </div>
                 ))}
 

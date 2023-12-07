@@ -4,7 +4,6 @@ import TrackVisibility from 'react-on-screen';
 import headerImg from '../../assest/images/header-img.svg'
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import './home.css'
-import { HashLink } from "react-router-hash-link/dist/react-router-hash-link.cjs.production";
 
 
 const Home = () => {

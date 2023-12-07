@@ -210,8 +210,8 @@ export const GameDevelopmentSkills = [
 export const AnthorSkillsData = [
     {
         id: 451,
-        title: 'Java, OOP, Algorithms and Data Strucutre',
-        icon: <FaJava size={50} />, color: '#0000',
+        title: 'Java,OOP, Algorithms',
+        icon: <FaJava size={40} />, color: '#0000',
     },
     {
         id: 452,
@@ -221,7 +221,7 @@ export const AnthorSkillsData = [
     {
         id: 453,
         title: 'C++',
-        icon: <img src={cpp} alt="C++" style={{ width: '5.3rem', height: '5.3rem' ,marginTop:'13px'}} />, color: '#0000',
+        icon: <img src={cpp} alt="C++" style={{ width: '5rem', height: '5rem' ,marginTop:'13px'}} />, color: '#0000',
     },
     {
         id: 454,

@@ -15,7 +15,7 @@ const AnthorSkills = ({ describe }) => {
                             <div key={skill?.id} className="col-6 col-md-3">
                                 <div className=" border rounded text-center skill-icon">
                                     {skill?.icon}
-                                    <h6 className="fw-bold mt-2">{skill?.title}</h6>
+                                    <h6 className="mt-2">{skill?.title}</h6>
                                 </div>
                             </div>
                         ))}
