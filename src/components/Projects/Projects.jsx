@@ -38,14 +38,12 @@ const Projects = () => {
                       <Tab.Pane eventKey="first" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                         <Row>
                           {
-                            ProjectsData.map((project, index) => {
-                              return (
-                                <ProjectCard
-                                  key={index}
-                                  {...project}
-                                />
-                              )
-                            })
+                            ProjectsData.map((project, index) => (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                              />
+                            ))
                           }
                         </Row>
                       </Tab.Pane>
@@ -66,7 +64,7 @@ const Projects = () => {
                       <Tab.Pane eventKey="third" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                         <Row>
                           {
-                              ProjectsData.filter(proj => proj.Language.includes('Bootstrap','JavaScript') && !proj.Language.includes('React')).map((project, index) => {
+                            ProjectsData.filter(proj => proj.Language.includes('Bootstrap', 'JavaScript') && !proj.Language.includes('React')).map((project, index) => {
                               return (
                                 <ProjectCard
                                   key={index}
