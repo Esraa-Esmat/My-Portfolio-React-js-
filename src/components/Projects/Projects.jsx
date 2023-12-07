@@ -35,7 +35,7 @@ const Projects = () => {
                       </Nav.Item>
                     </Nav>
                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                      <Tab.Pane eventKey="first">
+                      <Tab.Pane eventKey="first" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                         <Row>
                           {
                             ProjectsData.map((project, index) => {
@@ -49,7 +49,7 @@ const Projects = () => {
                           }
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="second">
+                      <Tab.Pane eventKey="second" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                         <Row>
                           {
                             ProjectsData.filter(proj => !proj.Language.includes('Bootstrap', 'JavaScript', 'React')).map((project, index) => {
@@ -63,7 +63,7 @@ const Projects = () => {
                           }
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="third">
+                      <Tab.Pane eventKey="third" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                         <Row>
                           {
                               ProjectsData.filter(proj => proj.Language.includes('Bootstrap','JavaScript') && !proj.Language.includes('React')).map((project, index) => {
@@ -77,7 +77,7 @@ const Projects = () => {
                           }
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="fourth">
+                      <Tab.Pane eventKey="fourth" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                         <Row>
                           {
                             ProjectsData.filter(proj => proj.Language.includes('React')).map((project, index) => {
