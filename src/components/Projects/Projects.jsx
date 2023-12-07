@@ -34,63 +34,50 @@ const Projects = () => {
                         <Nav.Link eventKey="fourth">REACT JS</Nav.Link>
                       </Nav.Item>
                     </Nav>
-                    <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                      <Tab.Pane eventKey="first" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                    <Tab.Content id="slideInUp">
+                      <Tab.Pane eventKey="first">
                         <Row>
-                          {
-                            ProjectsData.map((project, index) => (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                              />
-                            ))
-                          }
+                          {ProjectsData.map((project, index) => (
+                            <ProjectCard
+                              key={index}
+                              {...project}
+                            />
+                          ))}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="second" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                      <Tab.Pane eventKey="second">
                         <Row>
-                          {
-                            ProjectsData.filter(proj => !proj.Language.includes('Bootstrap', 'JavaScript', 'React')).map((project, index) => {
-                              return (
-                                <ProjectCard
-                                  key={index}
-                                  {...project}
-                                />
-                              )
-                            })
-                          }
+                          {ProjectsData.filter(proj => !proj.Language.includes('Bootstrap', 'JavaScript', 'React')).map((project, index) => (
+                            <ProjectCard
+                              key={index}
+                              {...project}
+                            />
+                          ))}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="third" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                      <Tab.Pane eventKey="third">
                         <Row>
-                          {
-                            ProjectsData.filter(proj => proj.Language.includes('Bootstrap', 'JavaScript') && !proj.Language.includes('React')).map((project, index) => {
-                              return (
-                                <ProjectCard
-                                  key={index}
-                                  {...project}
-                                />
-                              )
-                            })
-                          }
+                          {ProjectsData.filter(proj => proj.Language.includes('Bootstrap', 'JavaScript') && !proj.Language.includes('React')).map((project, index) => (
+                            <ProjectCard
+                              key={index}
+                              {...project}
+                            />
+                          ))}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="fourth" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                      <Tab.Pane eventKey="fourth">
                         <Row>
-                          {
-                            ProjectsData.filter(proj => proj.Language.includes('React')).map((project, index) => {
-                              return (
-                                <ProjectCard
-                                  key={index}
-                                  {...project}
-                                />
-                              )
-                            })
-                          }
+                          {ProjectsData.filter(proj => proj.Language.includes('React')).map((project, index) => (
+                            <ProjectCard
+                              key={index}
+                              {...project}
+                            />
+                          ))}
                         </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
+
                 </div>}
             </TrackVisibility>
           </Col>
