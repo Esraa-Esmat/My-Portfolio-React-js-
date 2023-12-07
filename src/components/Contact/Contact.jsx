@@ -43,11 +43,13 @@ const Contact = () => {
       return; // Stop further execution if fields are empty
     }
     else if ((email.trim() === '' || phone.trim() === '' || message.trim() == '')) {
-
-      errorMsg('Email , phone and message are required fields');
+      errorMsg('Email, phone, and message are required fields');
       setButtonText("Send");
       return;
-
+    } else if (!/^\d{11}$/.test(phone.trim())) {
+      errorMsg('Phone number must be 11 digits');
+      setButtonText("Send");
+      return;
     } else {
       setButtonText("Sending...");
       emailjs.sendForm('service_uhssk4x', 'template_num9kv7', form.current, 'owcI0ZHb-jsuS4DGx')
