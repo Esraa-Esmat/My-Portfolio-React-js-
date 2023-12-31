@@ -25,6 +25,7 @@ import project3 from '../../assest/images/project3.png'
 import project4 from '../../assest/images/project4.png'
 import project5 from '../../assest/images/project5.png'
 import project6 from '../../assest/images/project6.png'
+import project7 from '../../assest/images/project7.png'
 import { RiMailOpenFill } from "react-icons/ri";
 import navIcon2 from '../../assest/images/nav-icon1.svg'//linked
 import navIcon3 from '../../assest/images/phone-call-svgrepo-com.svg'
