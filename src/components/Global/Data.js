@@ -271,15 +271,15 @@ export const ProjectsData = [
         Language: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript'],
         description: 'Shop website with JavaScript shopping cart, favorite list, register and sign in with validate'
     },
-    {
-        id: 505,
-        title: 'MY Portfolio',
-        img: project5,
-        linkGithub: 'https://my-portfolio-react-js-ruby.vercel.app/',
-        linkDemo: 'https://my-portfolio-react-js-ruby.vercel.app/',
-        Language: ['HTML5', 'CSS3','Bootstrap','JavaScript','React'],
-        description: 'Portfolio For Me'
-    },
+    // {
+    //     id: 505,
+    //     title: 'MY Portfolio',
+    //     img: project5,
+    //     linkGithub: 'https://my-portfolio-react-js-ruby.vercel.app/',
+    //     linkDemo: 'https://my-portfolio-react-js-ruby.vercel.app/',
+    //     Language: ['HTML5', 'CSS3','Bootstrap','JavaScript','React'],
+    //     description: 'Portfolio For Me'
+    // },
     {
         id: 506,
         title: 'Education academy platform',
@@ -288,6 +288,15 @@ export const ProjectsData = [
         linkDemo: 'https://training-team-front4-project1.vercel.app/',
         Language: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript', 'React'],
         description: 'Multi-page platform with three layouts: student, instructor, and admin.'
+    },
+    {
+        id: 506,
+        title: 'TaxHub Website',
+        img: project7,
+        linkGithub: 'https://github.com/Esraa-Esmat/Training-Team-Front4-Project2',
+        linkDemo: 'https://training-team-front4-project2.vercel.app/',
+        Language: ['HTML5', 'CSS3','Bootstrap','JavaScript','React'],
+        description: 'Website to Taxhub with Admin and User layout'
     },
 
 ]
