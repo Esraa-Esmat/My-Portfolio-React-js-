@@ -37,12 +37,11 @@ const NavBar = () => {
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
     }
-    const renderTooltip = (title) => (
-        <Tooltip id="tooltip">{title}</Tooltip>
-      );
+
+
     return (
         <>
-            <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+            <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
                 <Container>
                     {/* <Navbar.Brand href="/">
                         <img src={logo} className="App-logo" alt="logo" />
@@ -63,26 +62,27 @@ const NavBar = () => {
                                     //     {icon.icon}
                                     // </a>
                                     <OverlayTrigger
-                                    key={icon.id}
-                                    placement="bottom"
-                                    // overlay={renderTooltip(icon.title)}
-                                    overlay={
-                                        <Tooltip id={`tooltip-${icon.id}`} style={{ zIndex: 20 }}>
-                                          {icon.title}
-                                        </Tooltip>
-                                      }
-                                  >
-                                    <Nav.Link href={icon.link} target='_blank'>
-                                      {icon.icon}
-                                    </Nav.Link>
-                                  </OverlayTrigger>
+                                        key={icon.id}
+                                        placement="bottom"
+                                        // overlay={renderTooltip(icon.title)}
+                                        overlay={
+                                            <Tooltip id={`tooltip-${icon.id}`} style={{ zIndex: 20 }}>
+                                                {icon.title}
+                                            </Tooltip>
+                                        }
+                                    >
+                                        <Nav.Link href={icon.link} target='_blank'>
+                                            {icon.icon}
+                                        </Nav.Link>
+                                    </OverlayTrigger>
                                 ))}
                             </div>
                         </span>
+                        <a href="./files/Esraa Mahmoud Esmat.pdf" target="_blank" download>
+                            <button className="vvd"><span>Download CV</span></button>
+                        </a>
 
-                        <HashLink to='#connect'>
-                            <button className="vvd"><span>Let’s Connect</span></button>
-                        </HashLink>
+
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

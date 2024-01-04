@@ -42,13 +42,13 @@ export const NavbarData = [
         id: 301,
         title: "GitHub",
         icon: <img src={navIcon1} alt="GitHub" />,
-        link: "https://github.com/Esraa-Esmat?tab=repositories"
+        link: "https://github.com/Esraa-Esmat"
     },
     {
         id: 302,
         title: "LinkedIn",
         icon: < img src={navIcon2} alt="LinkedIn" />,
-        link: "https://www.linkedin.com/in/esraa-mahmoud-esmat-92242a185/"
+        link: "https://www.linkedin.com/in/esraa-mahmoud-esmat/"
     },
     {
         id: 303,

@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import React, { useState } from 'react'
-import { selectCurrentSkill, setSkill } from '../../Redux/SkillReducer';
+import { setSkill } from '../../Redux/SkillReducer';
 import Skills from './Skills';
 import WebSkills from './WebSkills';
 import MachineSkills from './MachineSkills';
@@ -8,8 +8,6 @@ import DataScienceSkills from './DataScienceSkills';
 import GameSkills from './GameSkills';
 import colorSharp from '../../assest/images/color-sharp.png'
 import { TfiArrowCircleLeft } from "react-icons/tfi";
-// import { TfiArrowCircleLeft } from "react-bootstrap-icons";
-import { BsArrowLeftCircle } from "react-icons/bs";
 import AnthorSkills from './AnthorSkills';
 
 const AllSkills = () => {
