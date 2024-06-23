@@ -78,7 +78,7 @@ const NavBar = () => {
                                 ))}
                             </div>
                         </span>
-                        <a href="./files/Esraa Mahmoud Esmat.pdf" target="_blank" download>
+                        <a href="./files/Esraa-Mahmoud-Esmat.pdf" target="_blank" download>
                             <button className="vvd"><span>Download CV</span></button>
                         </a>
 
