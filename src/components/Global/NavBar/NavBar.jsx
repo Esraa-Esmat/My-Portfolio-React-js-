@@ -46,16 +46,16 @@ const NavBar = () => {
                     {/* <Navbar.Brand href="/">
                         <img src={logo} className="App-logo" alt="logo" />
                     </Navbar.Brand> */}
-                    <Navbar.Toggle aria-controls="basic-navbar-nav">
+                    {/* <Navbar.Toggle aria-controls="basic-navbar-nav">
                         <span className='navbar-toggle-icon'></span>
-                    </Navbar.Toggle>
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="ms-auto mx-5 navBarLinks">
+                    </Navbar.Toggle> */}
+                    <Navbar.Collapse id="basic-navbar-nav" className=" justify-content-between">
+                        <Nav className="navBarLinks">
                             <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
                             <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
                             <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
                         </Nav>
-                        <span className='navbar-text'>
+                        <span className='navbar-text '>
                             <div className="social-icon">
                                 {NavbarData?.map((icon) => (
                                     // <a href={icon.link} key={icon.id} title={icon.title}>
@@ -77,10 +77,12 @@ const NavBar = () => {
                                     </OverlayTrigger>
                                 ))}
                             </div>
-                        </span>
-                        <a href="./files/Esraa-Mahmoud-Esmat.pdf" target="_blank" download>
+
+                            <a href="./files/Esraa-Mahmoud-Esmat.pdf" target="_blank" download>
                             <button className="vvd"><span>Download CV</span></button>
                         </a>
+                        </span>
+                       
 
 
                     </Navbar.Collapse>

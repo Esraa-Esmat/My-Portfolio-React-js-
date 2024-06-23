@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="text-center">
 
           {/* <div  className="text-center text-sm-end"> */}
-          <div className="social-icon  my-5">
+          <div className="social-icon  my-4 justify-content-center">
             {NavbarData?.map((icon) => (
               // <a href={icon.link} key={icon.id} title={icon.title}>
               //     {icon.icon}
@@ -31,9 +31,10 @@ const Footer = () => {
                 </a>
               </OverlayTrigger>
             ))}
-            <p>Copyright 2023. All Rights Reserved</p>
 
           </div>
+          <p>Copyright 2023. All Rights Reserved</p>
+
           {/* </div> */}
         </div>
       </Container>
