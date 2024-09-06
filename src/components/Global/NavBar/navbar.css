@@ -9,7 +9,7 @@ nav.navbar {
 
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: rgb(18, 18, 18);
 }
 
 nav.navbar a.navbar-brand {
@@ -40,6 +40,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link {
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
+  
 }
 
 span.navbar-text {
